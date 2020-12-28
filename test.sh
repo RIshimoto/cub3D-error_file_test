@@ -6,24 +6,17 @@ memory_leak_check=true
 ESC=$(printf '\033')
 all=0
 ac=0
+array=()
 tmpfile=$(mktemp)
 for f in ./${1:-*}/*; do
 	all=$(( $all + 1 ))
 	$path $f 2> $$
-	if [ ${f%/*} = "./Accept" ]; then 
-		if [ ! -s $$ ]; then
-			ac=$(( $ac + 1 ))
-			printf "%-50s%c${ESC}[32m%s${ESC}[m%c" $f '[' 'OK' ']';
-		else
-			printf "%-50s%c${ESC}[31m%s${ESC}[m%c" $f '[' 'Fail' ']';
-		fi
+	if [ -s $$ ]; then
+		ac=$(( $ac + 1 ))
+		printf "%-50s%c${ESC}[32m%s${ESC}[m%c" $f '[' 'OK' ']';
 	else
-		if [ -s $$ ]; then
-			ac=$(( $ac + 1 ))
-			printf "%-50s%c${ESC}[32m%s${ESC}[m%c" $f '[' 'OK' ']';
-		else
-			printf "%-50s%c${ESC}[31m%s${ESC}[m%c" $f '[' 'Fail' ']';
-		fi
+		array=("${array[@]}" $f)
+		printf "%-50s%c${ESC}[31m%s${ESC}[m%c" $f '[' 'Fail' ']';
 	fi
 	if  $memory_leak_check ; then
 		valgrind --leak-check=full $path $f 2>$tmpfile
@@ -44,3 +37,7 @@ for f in ./${1:-*}/*; do
 	rm $tmpfile
 done
 echo "$ac / $all"
+echo "===Errors caused by these files==="
+for e in ${array[@]}; do
+	echo "${e}"
+done

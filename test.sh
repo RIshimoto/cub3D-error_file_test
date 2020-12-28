@@ -1,10 +1,6 @@
 #!/bin/bash
 
-cd ../sources
-make re
-make clean
-cd ../cubfiles
-path="../sources/cub3D"
+path="./cub3D"
 see_the_error_message=false
 memory_leak_check=true
 ESC=$(printf '\033')

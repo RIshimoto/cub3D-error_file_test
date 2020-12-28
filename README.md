@@ -1,5 +1,3 @@
-ふはははは、ここまで辿り着いたことを誉めてやろう。 
-
 # What can you do with using this?  
 You'll realize that your cub3d can accept error file.  
 However, this tool inform you whether you put "error\n" or not.  

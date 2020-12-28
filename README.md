@@ -10,4 +10,4 @@ You don't know if your program is normally finished.
 2. Done ./test.sh!   
 If you don't understand this description, give me DM, please.
 
-あーあと、test.sh内のsee_the_error_message変数をtrueにすれば、各テストに対してどんなエラーメッセージ出したか見れます。
+あーあと、test.sh内のsee_the_error_message変数をtrueにすれば、各テストに対してどんなエラーメッセージ出したか見れますよ。

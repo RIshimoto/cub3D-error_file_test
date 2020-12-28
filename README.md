@@ -1,7 +1,7 @@
 ふはははは、ここまで辿り着いたことを誉めてやろう。 
 
 # What can you do with using this?  
-You realize that your cub3d can accept error file.  
+You'll realize that your cub3d can accept error file.  
 However, this tool inform you whether you put "error\n" or not.  
 You don't know if your program is normally finished. 
 

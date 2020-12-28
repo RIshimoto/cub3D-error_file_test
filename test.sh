@@ -22,6 +22,7 @@ for f in ./${1:-*}/*; do
 		valgrind --leak-check=full $path $f 2>$tmpfile
 		memoryleak=`tail -1 $tmpfile | awk '{print $4}'`
 		if [ $memoryleak != 0 ]; then
+			array=("${array[@]}" $f)
 			printf "%c${ESC}[31m%s${ESC}[m%c\n" '[' 'memoryleak?' ']';
 		else
 			printf "%c${ESC}[32m%s${ESC}[m%c\n" '[' 'No memoryleak' ']';

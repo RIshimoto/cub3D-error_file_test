@@ -3,7 +3,7 @@
 # What can you do with using this?  
 You'll realize that your cub3d can accept error file.  
 However, this tool inform you whether you put "error\n" or not.  
-You don't know if your program is normally finished. 
+You don't know if your program is regularly finished. 
 
 # Usage
 1. Please put your best exeute file(実行ファイルのこと、なんか英語がわからん言う子がおったもんで。すみませんねほんと) in this repository.  

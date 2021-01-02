@@ -16,7 +16,7 @@ for f in ./${1:-*}/*; do
 		printf "%-50s%c${ESC}[32m%s${ESC}[m%c" $f '[' 'OK' ']';
 	else
 		array=("${array[@]}" $f)
-		printf "%-50s%c${ESC}[31m%s${ESC}[m%c" $f '[' 'Fail' ']';
+		printf "%-50s%c${ESC}[31m%s${ESC}[m%c\n" $f '[' 'Fail' ']';
 	fi
 	if  $memory_leak_check ; then
 		valgrind --leak-check=full $path $f 2>$tmpfile
@@ -34,9 +34,9 @@ for f in ./${1:-*}/*; do
 		cat $$
 		echo ""
 	fi
-	rm $$
-	rm $tmpfile
 done
+rm $$
+rm $tmpfile
 echo "$ac / $all"
 echo "===Errors caused by these files==="
 for e in ${array[@]}; do

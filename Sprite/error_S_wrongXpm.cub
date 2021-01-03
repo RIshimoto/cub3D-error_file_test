@@ -4,7 +4,7 @@ NO ./north.xpm
 SO ./south.xpm
 WE ./west.xpm
 EA ./east.xpm
-S ./spritetexture
+S ./sprite.txt
 
 F 220,100,0
 C 225,30,0

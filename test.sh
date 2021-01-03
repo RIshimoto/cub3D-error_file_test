@@ -1,7 +1,7 @@
 #!/bin/bash
 
 path="./cub3D"
-see_the_error_message=true
+see_the_error_message=false
 memory_leak_check=true
 ESC=$(printf '\033')
 all=0

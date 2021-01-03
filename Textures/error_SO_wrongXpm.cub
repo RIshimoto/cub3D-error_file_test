@@ -2,7 +2,7 @@ R 1920                   1080
 
 NO ./north.xpm
 
-SO ./southtexture
+SO ./south.txt
 WE ./west.xpm
 EA ./east.xpm
 S ./sprite.xpm

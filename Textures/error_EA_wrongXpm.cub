@@ -4,7 +4,7 @@ NO ./north.xpm
 
 SO ./south.xpm
 WE ./west.xpm
-EA ./easttexture
+EA ./east.txt
 S  ./sprite.xpm
 
 F 220,100,0

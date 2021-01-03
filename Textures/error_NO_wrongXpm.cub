@@ -1,6 +1,6 @@
 R 1920                   1080
 
-NO ./northtexture
+NO ./north.txt
 
 SO ./south.xpm
 WE ./west.xpm

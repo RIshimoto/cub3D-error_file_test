@@ -35,3 +35,4 @@ $./test.sh Texture
 
 # Special Thanks
 - 結局来なかった君。
+- 泣かなかった僕。

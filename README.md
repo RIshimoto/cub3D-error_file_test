@@ -1,14 +1,35 @@
-# What can you do with using this?  
-You'll realize that your cub3d can accept error file.  
-However, this tool inform you whether you put "error\n" or not.  
-You don't know if your program is regularly finished. 
 
-# Usage
-1. Please put your best execute file(実行ファイルのこと、なんか英語がわからん言う子がおったもんで。すみませんねほんと) in this repository.  
-2. Done ./test.sh!   
-If you don't understand this description, give me DM. 
+授業後、図書館で勉強しないか誘った、あの子からの返信を待ってる間に作りました。 
+期待と不安。８度目の誘いの返事はー。
 
-ex  
+# 使い方
+## 1. 実行ファイルをテストツールのディレクトリー直下に置く。 
+## 2. テストを実行。 
+- すべてのテストを実行。
+```
+$./test.sh
+```
+- 一部のテストを実行。
+```
+# Mapに関するテストを行う。
+$./test.sh Map
+
+# Textureに関するテストを行う。
+$./test.sh Texture
+```
+
+## 出力例
 ![test](https://user-images.githubusercontent.com/57135683/103202267-48e51880-4935-11eb-80aa-bc71c4e6bd17.png)
 
-あと、test.sh内のsee_the_error_message変数をtrueにすれば、各テストに対してどんなエラーメッセージ出したか見れますよ。
+# 注意 
+エラーケースが出力されず、ウィンドウが出た場合は手動で消してください。すみません。
+エラーケースに対して、標準エラー出力がでる場合に[OK]としています。
+有効なエラーが出ているかは目視で確認してください。（test.sh内のsee_the_error_message変数をtrueにすれば、各テストに対してどんなエラーメッセージ出したかを確認できます。）
+
+また、メモリリークについてですが、[memoryleak?]が出る場合は以下の２パターンです。
+1.ほんとにメモリリークしている。
+2.プログラム上よくないことをしている。（例えば、初期化してない変数を使っているなど）
+必ずしもメモリリークしているわけではないのでご了承ください。
+
+# Special Thanks
+- 結局来なかった君。

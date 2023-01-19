@@ -1,8 +1,6 @@
 
-# cub3D[^1]のテストツール
-cub3Dの入力ファイルのバリデーションチェックをするテストツール。
-
-[^1]:https://github.com/RIshimoto/cub3D
+# [cub3D](https://github.com/RIshimoto/cub3D)のテストツール
+[cub3D](https://github.com/RIshimoto/cub3D)の入力ファイルのバリデーションチェックをするテストツール。
 
 # 使い方
 ## 1. 実行ファイルをテストツールのディレクトリ直下に置く。 

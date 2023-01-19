@@ -23,8 +23,8 @@ $./test.sh Texture
 ## 実行
 ```
 $ git clone https://github.com/RIshimoto/cub3D-input_file_test
-$ （cub3Dの実行ファイルをcub3D-input_file_test内に置く）
 $ cd cub3D-input_file_test
+（cub3Dの実行ファイルをcub3D-input_file_test内に置く）
 $ make all
 $ ./test.sh
 ```

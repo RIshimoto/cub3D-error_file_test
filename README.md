@@ -22,6 +22,15 @@ $./test.sh Map
 $./test.sh Texture
 ```
 
+## 実行
+```
+$ git clone https://github.com/RIshimoto/cub3D-input_file_test
+$ （cub3Dの実行ファイルをcub3D-input_file_test内に置く）
+$ cd cub3D-input_file_test
+$ make all
+$ ./test.sh
+```
+
 ## デモ
 https://user-images.githubusercontent.com/57135683/213444467-43d08cb4-39d0-479e-962d-fe6948f11ff9.mp4
 
